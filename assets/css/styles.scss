@@ -1,4 +1,4 @@
-:root { --yellow: hsl(47, 88%, 63%); --white: hsl(0, 0%, 100%); --gray-500: hsl(0, 0%, 42%); --gray-950: hsl(0, 0%, 7%); }
+:root { --yellow: hsl(47, 88%, 63%); --white: hsl(0, 0%, 100%); --gray-500: hsl(0, 0%, 42%); --gray-950: hsl(0, 0%, 7%); --blue: hsl(242, 100%, 27%); }
 @font-face {
     font-family: 'Figtree';
     src: url('../fonts/Figtree-VariableFont_wght.ttf') format('embedded-opentype'), /* Internet Explorer */
@@ -8,6 +8,9 @@
          url('../fonts/Figtree-VariableFont_wght.ttf') format('svg'); /* Legacy iOS */
 }
 body { margin: 0; padding: 0; background-color: var(--yellow); color: var(--gray-950); font-size: 16px; font-family: 'Figtree', sans-serif; }
+
+a { color: var(--blue); font-weight: bold; }
+a:focus, a:hover { text-decoration: none; }
 
 main { display: flex; justify-content: center; align-items: center; min-height: 100vh; }
     .BlogCard { border: 1px solid var(--gray-950); border-radius: 1.2rem; padding: 1.4rem; max-width: 17rem; background-color: var(--white); box-shadow: 0.5rem 0.5rem 0 var(--gray-950);  }
@@ -23,4 +26,4 @@ main { display: flex; justify-content: center; align-items: center; min-height: 
         .User { display: flex; align-items: center; gap: 1rem; }
             .User img { width: 2rem; }
             .User p { font-weight: bold; }
-footer { display: block; max-width: fit-content; margin: -3rem auto 0 auto; }
+footer p { display: block; max-width: fit-content; margin: -3rem auto 0 auto; }

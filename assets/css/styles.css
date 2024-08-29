@@ -3,6 +3,7 @@
   --white: hsl(0, 0%, 100%);
   --gray-500: hsl(0, 0%, 42%);
   --gray-950: hsl(0, 0%, 7%);
+  --blue: hsl(242, 100%, 27%);
 }
 
 @font-face {
@@ -16,6 +17,15 @@ body {
   color: var(--gray-950);
   font-size: 16px;
   font-family: "Figtree", sans-serif;
+}
+
+a {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
 }
 
 main {
@@ -103,7 +113,7 @@ h1:active {
   font-weight: bold;
 }
 
-footer {
+footer p {
   display: block;
   max-width: -moz-fit-content;
   max-width: fit-content;
